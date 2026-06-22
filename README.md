@@ -1,29 +1,72 @@
-Simple Pomodoro Timer
+# Simple Pomodoro Timer
 
-Description
-A lightweight Pomodoro timer built in Python using a custom sevseg.py module to display a 7-segment style countdown. Helps users manage work and break intervals efficiently using the classic Pomodoro technique.
+A lightweight Pomodoro timer built in Python that runs directly in the command line, using a custom 7-segment style countdown display.
 
-Technologies
+## Overview
 
-Python
+Simple Pomodoro Timer helps you manage work and break intervals using the classic Pomodoro Technique. The timer displays a countdown in a retro 7-segment style, making it easy to track your focus sessions right from your terminal.
 
-Custom sevseg.py module for 7-segment style countdown display
+## Features
 
-Features
+- **Configurable Intervals** – Customize work and break durations to suit your workflow
+- **7-Segment Display** – Countdown shown in a stylish 7-segment style using a custom Python module
+- **Lightweight** – Runs directly in the terminal with no external dependencies
+- **Simple & Intuitive** – Easy to use with on-screen countdown instructions
 
-Configurable work and break intervals
+## Tech Stack
 
-Countdown displayed in 7-segment style using a custom Python module
+| Component     | Technology                         |
+|---------------|------------------------------------|
+| **Language**  | Python                             |
+| **Display**   | Custom `sevseg.py` module for 7-segment style output |
+| **Platform**  | Command Line / Terminal            |
 
-Simple and lightweight, runs directly in the terminal
+## Project Structure
+SimplePomodoroTimer/
+├── PomodoroTimer.py # Main timer script
+├── sevseg.py # Custom 7-segment display module
+└── README.md # Project documentation
 
-Installation / Usage
-Download the zip file
-Extract the files
-Run the timer:
-PomodoroTimer.py
-Follow the on-screen countdown for work and break sessions.
 
-Credits / Acknowledgements
+## Getting Started
+
+### Prerequisites
+
+- Python 3.x installed on your system
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yba-santito/SimplePomodoroTimer.git
+cd SimplePomodoroTime
+```
+
+### 2. Download the Files (Alternative)
+If you prefer not to use Git, you can download the ZIP file from the repository and extract it.
+
+3. Run the Timer
+```bash
+python PomodoroTimer.py
+Follow the on-screen countdown instructions for work and break sessions.
+```
+### Usage
+Run PomodoroTimer.py from your terminal
+
+The timer will display a work session countdown in 7-segment style
+
+When the work session ends, a break session will begin automatically
+
+Follow the cycle to maintain focus and productivity
+
+### Customization
+You can modify the work and break intervals directly in PomodoroTimer.py by adjusting the relevant variables (e.g., WORK_MIN, BREAK_MIN).
+
+### Credits & Acknowledgements
 Custom sevseg.py module built from scratch
-Inspired by other 7-segment display implementations found online (adapted ideas, original code written by author)
+
+Inspired by other 7-segment display implementations found online (adapted ideas, original code written by the author)
+
+### License
+This project is open source and available for educational and personal use.
+
+Happy focusing! 🍅
